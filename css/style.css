@@ -1,0 +1,210 @@
+.row {
+  width: 992px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+}
+
+/* BLOCCO LEZIONI */
+#lezioni .row > .left,
+#lezioni .row > .right {
+  width: 50%;
+  float: left;
+}
+
+#lezioni .row img {
+  /* per centrare orizzontalmente */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#lezioni {
+  text-align: center;
+}
+
+/* BLOCCO STEPS */
+#steps .row > .left,
+#steps .row > .central,
+#steps .row > .right {
+  float: left;
+  width: 33%;
+}
+
+#steps {
+  text-align: center;
+}
+
+/* BLOCCO PERCHE */
+#why {
+  text-align: center;
+}
+
+#why .row > .first,
+#why .row > .second,
+#why .row > .third {
+  width: 100%;
+  margin-top: 80px;
+}
+
+#why .row img {
+  background-color: #428bca;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+/* COMMON */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container.grey {
+  background-color: #f9f9f9;
+}
+
+img {
+  height: 200px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* IPAD */
+
+@media screen and (max-width: 768px) {
+  #why,
+  #lezioni {
+    background-color: #f2f2cd;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    
+  }
+
+  #steps .row > div{
+    flex-direction: row;
+  }
+
+  .row div {
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    height: 100px;
+  }
+
+  #steps {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  #lezioni .row > .left,
+  #lezioni .row > .right,
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    text-align: center;
+    width: 100%;
+  }
+
+  
+  #steps .row > .left {
+    width: 100%;
+  }
+
+  #steps .row > .central,
+  #steps .row > .right {
+    width: calc(100% / 2);
+  }
+}
+
+/* IPHONE-HORIZONTAL */
+
+@media screen and (max-width: 420px) {
+  #why,
+  #lezioni {
+    background-color: #f2f2cd;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .row div {
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    height: 150px;
+  }
+
+  #steps,
+  #lezioni {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  #lezioni .row > .left,
+  #lezioni .row > .right,
+  #steps .row > .left,
+  #steps .row > .central,
+  #steps .row > .right {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* IPHONE-VERTICAL */
+
+  @media screen and (max-width: 320px) {
+    #why,
+    #lezioni {
+      background-color: #f2f2cd;
+    }
+
+    .row {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+    }
+
+    .row div {
+      justify-content: center;
+      align-items: center;
+    }
+
+    img {
+      height: 100px;
+    }
+
+    #steps,
+    #lezioni {
+      width: 100%;
+      text-align: center;
+      padding: 0;
+    }
+
+    #lezioni .row > .left,
+    #lezioni .row > .right,
+    #steps .row > .left,
+    #steps .row > .central,
+    #steps .row > .right {
+      text-align: center;
+      width: 100%;
+    }
+  }
+}
